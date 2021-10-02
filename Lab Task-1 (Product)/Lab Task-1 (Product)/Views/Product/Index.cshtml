@@ -1,0 +1,28 @@
+﻿@model List<Lab_Task_1__Product_.Models.Product>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Description</th>
+    </tr>
+         
+        @foreach(var p in Model)
+            {
+            <tr>
+                <td>@p.Id</td>
+                <td>@p.Name</td>
+                <td>@p.Price</td>
+                <td>@p.Quantity</td>
+                <td>@p.Description</td>
+            </tr>
+
+            }
+ 
+</table>
