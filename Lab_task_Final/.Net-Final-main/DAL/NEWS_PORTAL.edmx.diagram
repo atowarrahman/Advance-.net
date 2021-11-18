@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d41625630f7f4d909ef13342afe44458" Name="Diagram1">
+        <EntityTypeShape EntityType="News_portalModel.Category" Width="1.5" PointX="0.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_portalModel.Comment" Width="1.5" PointX="4.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_portalModel.News" Width="1.5" PointX="7.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_portalModel.news_reacts" Width="1.5" PointX="7.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_portalModel.React" Width="1.5" PointX="3.625" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_portalModel.Role" Width="1.5" PointX="0.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_portalModel.sysdiagram" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="News_portalModel.User" Width="1.5" PointX="2.625" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="News_portalModel.FK_News_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="News_portalModel.FK_Comment_News" ManuallyRouted="false" />
+        <AssociationConnector Association="News_portalModel.FK_Comment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="News_portalModel.FK_news_reacts_News" ManuallyRouted="false" />
+        <AssociationConnector Association="News_portalModel.FK_News_User" ManuallyRouted="false" />
+        <AssociationConnector Association="News_portalModel.FK_news_reacts_Reacts" ManuallyRouted="false" />
+        <AssociationConnector Association="News_portalModel.FK_news_reacts_User" ManuallyRouted="false" />
+        <AssociationConnector Association="News_portalModel.FK_User_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
